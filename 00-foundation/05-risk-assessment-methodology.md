@@ -1,14 +1,14 @@
-# 05 — Risk Assessment Methodology
+# 05 - Risk Assessment Methodology
 
 This document defines how to assess, score, and accept risk for any AI system in <ORG>.
 
 ## 1. Five-stage methodology
 
-1. **Triage** — confirm the system is in scope and gather first-pass facts (intake form).
-2. **Tier classification** — assign Prohibited / High / Limited / Minimal based on the criteria below.
-3. **Risk assessment** — score inherent risk across the taxonomy in `03-ai-risk-taxonomy.md`.
-4. **Control evaluation** — map applicable controls from `06-control-catalogue.md` and rate their design and operating effectiveness.
-5. **Residual-risk acceptance** — formal acceptance by the authorised approver based on residual score versus appetite.
+1. **Triage** - confirm the system is in scope and gather first-pass facts (intake form).
+2. **Tier classification** - assign Prohibited / High / Limited / Minimal based on the criteria below.
+3. **Risk assessment** - score inherent risk across the taxonomy in `03-ai-risk-taxonomy.md`.
+4. **Control evaluation** - map applicable controls from `06-control-catalogue.md` and rate their design and operating effectiveness.
+5. **Residual-risk acceptance** - formal acceptance by the authorised approver based on residual score versus appetite.
 
 ## 2. Tier classification logic
 
@@ -35,7 +35,7 @@ This document defines how to assess, score, and accept risk for any AI system in
 
 ### 2.3 Limited risk (transparency obligations)
 - Chatbots, virtual assistants (must disclose AI).
-- AI-generated or AI-manipulated content (deepfakes — must be labelled).
+- AI-generated or AI-manipulated content (deepfakes - must be labelled).
 - Generative AI outputs (machine-readable marking obligations).
 - Emotion-recognition outside the prohibited domains (transparency).
 
@@ -46,7 +46,7 @@ This document defines how to assess, score, and accept risk for any AI system in
 
 Score each dimension. Inherent score = max across dimensions (worst-case anchor).
 
-| Dimension | 1 — Negligible | 3 — Moderate | 5 — Critical |
+| Dimension | 1 - Negligible | 3 - Moderate | 5 - Critical |
 |---|---|---|---|
 | Impact on individuals | No effect | Inconvenience | Loss of rights, safety, livelihood |
 | Number affected | <100 | 100–10,000 | >10,000 or vulnerable groups |
