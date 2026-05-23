@@ -1,66 +1,78 @@
 # Worked Example 02 — Risk Assessment Workbook (CV-Screening AI)
 
-Filled-in copy of toolkit/03-risk-assessment-workbook.md for AI-2026-0001 (CV-Screening AI).
+Filled-in copy of `toolkit/03-risk-assessment-workbook.md` for AI-2026-0001 (CV-Screening AI). Sections, tier labels, and scoring method mirror the toolkit exactly (Tier 1 Prohibited / Tier 2 High-risk / Tier 3 Limited / Tier 4 Minimal; inherent score = sum of 8 dimensions, 8–40 scale).
 
-Assessor: Ankit U. (AI Risk Lead)
-Date completed: 18 April 2026
+AI-ID: **AI-2026-0001**  System name: **CV-Screening AI for HR**  Assessor: **Ankit U., AI Risk Lead**  Date: **18 April 2026**
+
 Workshop participants: Head of HR, HR Operations Manager, DPO, IT Security Lead, Legal Counsel (EU + UAE), TalentRank.ai Customer Success Manager.
 
 ---
 
-## Section A — Classification (Tier)
+## SECTION A — Tier Classification
 
-| Question | Answer | Notes |
+**A1. PROHIBITED list** — all N. No subliminal manipulation, no social scoring, no biometric ID, no emotion recognition in workplace (the system does not infer emotion; it scores fit-to-JD).
+
+**A2. HIGH-RISK list** — **Y** on "Employment, worker management, access to self-employment (CV screening, performance, firing)". EU AI Act Annex III §4 applies.
+
+→ **Tier 2 High-risk**. Continue with full assessment.
+
+Recorded Tier: **Tier 2 High-risk**.
+
+---
+
+## SECTION B — Inherent Risk Scoring (8 Dimensions, additive 8–40)
+
+| Dim | Score | Rationale |
 |---|---|---|
-| Does the system make or materially influence decisions about people? | Yes | Influences interview shortlists. |
-| Is it used in employment, education, credit, health, insurance, law enforcement, biometrics, or critical infrastructure? | Yes — employment | EU AI Act Annex III §4 (employment, workers management, access to self-employment). |
-| Does it process personal data at scale? | Yes | ~18,000 candidates/year. |
-| Is it a foundation model or general-purpose AI? | No | Classification model. |
-| Could a failure cause physical harm, financial loss, or denial of rights? | Yes — denial of access to employment | Discrimination risk. |
+| B1 Impact | **4** | Affects access to employment for ~18,000 candidates/year. Possible loss of opportunity; dignity impact; some vulnerable applicants. |
+| B2 Privacy | **3** | Personal data including nationality, DOB; cross-border EU→US for vendor support (SCCs); UAE PDPL transfer needs assessment. Clear lawful basis. |
+| B3 Bias | **4** | Training data is 5 years of hires that historically skewed 68% male in engineering. Vendor has not tested on Arabic-language CVs. Mitigations under development. |
+| B4 Security | **3** | Vendor SOC 2 Type II; pen test 8 months old; no customer-managed keys at start. |
+| B5 Robustness | **3** | Vendor reports AUC 0.81 on their benchmark; not yet validated on our population; drift monitoring planned. |
+| B6 Transparency | **4** | Candidates currently not informed CV is scored by AI; no reason codes shown to recruiters. EU AI Act Art. 13 and GDPR Art. 13/22 require disclosure. |
+| B7 Oversight | **2** | Recruiter reviews every shortlist with authority to override. Override rate not yet measured. |
+| B8 Vendor | **3** | Series B startup; standard MSA in place; AI addendum pending; concentration risk. |
 
-**Final tier: Tier 2 — High risk** (EU AI Act high-risk; GDPR Art. 22 automated decision-making with human-in-the-loop; UAE Charter Principle "Fairness".)
+**Inherent Risk Score = 4 + 3 + 4 + 3 + 3 + 4 + 2 + 3 = 26 / 40 → Medium**
 
-Approver of tier: AI Risk Committee, 22 April 2026.
+Note: two dimensions at 4 (B1, B3, B6) and no single dimension at 5 — band stays Medium per the workbook, but proximity to the High band (27–32) is noted for ARC.
 
 ---
 
-## Section B — Risk Scoring (8 dimensions, 1=low … 5=critical)
+## SECTION C — Controls and Treatment
 
-| # | Dimension | Score | Rationale |
+| Dim ≥ 3 | Control(s) chosen | Owner | Due |
 |---|---|---|---|
-| 1 | Fairness & bias | 4 | Training data covers 5 years of hires that historically skewed 68% male in engineering roles. Vendor has not tested on Arabic-language CVs. |
-| 2 | Privacy & data protection | 3 | Personal data including nationality and DOB. Cross-border transfer EU→US for vendor analytics (SCCs in place). UAE PDPL transfer needs assessment. |
-| 3 | Security | 3 | Vendor SOC 2 Type II. Pen test 8 months old. No customer-managed keys. |
-| 4 | Robustness & accuracy | 3 | Vendor reports AUC 0.81 on their benchmark. Not validated on our population yet. |
-| 5 | Transparency & explainability | 4 | Candidates not informed CV is scored by AI. No reason codes shown to recruiters. EU AI Act Art. 13 + GDPR Art. 13/22 require disclosure. |
-| 6 | Human oversight | 2 | Recruiter reviews every shortlist; can override. Override rate not yet measured. |
-| 7 | Accountability & governance | 3 | Business owner named. RACI not signed. Vendor DPA signed; AI addendum pending. |
-| 8 | Societal & reputational | 3 | Local media has covered AI-hiring discrimination twice in past year. |
+| B1 Impact | (a) Candidate appeal route (human-only review on request); (b) Recruiter UI shows top-5 features per score; (c) Limited decision autonomy in pilot (shortlist only, no auto-reject) | HR + Product | 15 Aug 2026 |
+| B2 Privacy | (a) DPIA signed by DPO; (b) Candidate privacy notice updated to disclose AI scoring; (c) UAE PDPL cross-border transfer assessment; (d) Data minimisation — strip free-text health/family fields before scoring | DPO | 30 Jun 2026 |
+| B3 Bias | (a) Pre-deployment disparate-impact test (4/5ths rule) across gender, nationality, age; (b) Exclude photo + DOB from features; (c) Quarterly bias re-test; (d) Fairness-aware retraining trigger when subgroup AUC gap >5% | HR Ops + AI Risk | 15 Jul 2026 |
+| B4 Security | (a) Updated pen test (<6 months); (b) Customer-managed KMS keys; (c) Vendor added to continuous monitoring; (d) AI events to SIEM | CISO | 30 Jun 2026 |
+| B5 Robustness | (a) Champion-challenger test on 2,000 of our historical CVs; (b) Accept only if AUC ≥ 0.78 on our data; (c) Monthly drift monitor | Data Science | 31 Jul 2026 |
+| B6 Transparency | (a) "Your application is reviewed with the help of AI" notice on careers portal; (b) GDPR Art. 22 human-review request route; (c) Model card and data card published internally | DPO + Product | 15 Aug 2026 |
+| B8 Vendor | (a) Signed AI addendum (provider obligations, model-change notification, audit rights, escrow, exit); (b) Documented manual fallback shortlisting process | Procurement | 30 Jun 2026 |
 
-Inherent risk total: 25 / 40 → **High inherent risk**.
+All eight rows added to `toolkit/05-treatment-plan.csv` (see WORKED-EXAMPLE/example-04-treatment-plan-extract.csv).
 
 ---
 
-## Section C — Treatment (Controls)
+## SECTION D — Residual Risk and Approval
 
-| Risk dimension | Control(s) chosen | Owner | Due |
+| Dimension | Inherent (1–5) | Controls strength | Residual (1–5) |
 |---|---|---|---|
-| Fairness & bias | (a) Pre-deployment disparate impact testing across gender, nationality, age (4/5ths rule). (b) Quarterly bias re-test. (c) Exclude photo + DOB from features. | HR Ops + AI Risk | 15 Jul 2026 |
-| Privacy | (a) DPIA completed and approved by DPO. (b) Candidate privacy notice updated to disclose AI scoring. (c) UAE PDPL cross-border transfer assessment. | DPO | 30 Jun 2026 |
-| Security | (a) Require updated pen test (<6 months). (b) Enable customer-managed KMS keys. (c) Add vendor to continuous monitoring. | CISO | 30 Jun 2026 |
-| Robustness | (a) Champion-challenger test on 2,000 of our historical CVs with known outcomes. (b) Accept only if AUC ≥ 0.78 on our data. | Data Science | 31 Jul 2026 |
-| Transparency | (a) Add notice in careers portal: "Your application is reviewed with the help of AI." (b) Provide candidates a route to request human-only review (GDPR Art. 22). (c) Recruiter UI shows top 5 features driving each score. | HR + Product | 15 Aug 2026 |
-| Human oversight | (a) Recruiter training: AI ranking is advisory. (b) Track and report override rate monthly; investigate if <10%. | HR Ops | Ongoing |
-| Accountability | (a) Sign RACI. (b) Vendor AI addendum (EU AI Act + ISO 42001 alignment). (c) Add to AI inventory + risk register. | AI Risk Lead | 30 Jun 2026 |
-| Societal | (a) Pre-launch comms plan. (b) Candidate FAQ. | Comms | 20 Aug 2026 |
+| B1 Impact | 4 | High | 2 |
+| B2 Privacy | 3 | High | 2 |
+| B3 Bias | 4 | High | 2 |
+| B4 Security | 3 | Medium | 2 |
+| B5 Robustness | 3 | Medium | 2 |
+| B6 Transparency | 4 | High | 2 |
+| B7 Oversight | 2 | Medium | 2 |
+| B8 Vendor | 3 | Medium | 2 |
 
----
+**Residual Risk Score = 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 16 / 40 → Low-Medium**
 
-## Section D — Approval
+### Approval
 
-Residual risk after controls (target): 12 / 40 → **Moderate**.
-
-Approval required from: AI Risk Committee (Tier 2 requires ARC sign-off; Tier 3+ would require Board).
+Required: AI Risk Committee (Tier 2 High-risk; residual Low-Medium still requires ARC because tier is High).
 
 | Approver | Role | Decision | Date | Conditions |
 |---|---|---|---|---|
@@ -69,19 +81,27 @@ Approval required from: AI Risk Committee (Tier 2 requires ARC sign-off; Tier 3+
 | CISO | Security | Approve | 25 Apr 2026 | KMS keys + fresh pen test before go-live. |
 | Head of HR | Business owner | Accept residual risk | 25 Apr 2026 | — |
 
-Go-live conditional on all controls verified. Re-assessment trigger: annual, or sooner if model retrained, vendor changes, or override rate <10%.
+Go-live conditional on all controls verified.
 
 ---
 
-## Section E — Monitoring (post go-live)
+## SECTION E — Monitoring Plan
 
-| KPI | Target | Frequency | Owner |
+| Metric | Cadence | Threshold | Owner |
 |---|---|---|---|
-| Disparate impact ratio (gender, nationality, age groups) | ≥ 0.80 (4/5ths rule) | Quarterly | AI Risk + HR |
-| Recruiter override rate | ≥ 10% | Monthly | HR Ops |
-| Candidate complaints related to AI | < 5 / quarter | Monthly | DPO |
-| Model AUC on rolling 90-day window | ≥ 0.78 | Monthly | Data Science |
-| Time-to-shortlist | ≤ 3 days | Monthly | HR Ops |
-| Vendor incidents (SOC 2 exceptions, breach) | 0 | Continuous | CISO |
+| Disparate impact ratio (gender, nationality, age groups) | Quarterly | ≥ 0.80 (4/5ths) | AI Risk + HR |
+| Recruiter override rate | Monthly | ≥ 10% | HR Ops |
+| Candidate complaints related to AI | Monthly | < 5 / quarter | DPO |
+| Model AUC on rolling 90-day window | Monthly | ≥ 0.78 | Data Science |
+| Drift indicator (PSI on top features) | Monthly | < 0.2 | Data Science |
+| Time-to-shortlist | Monthly | ≤ 3 days | HR Ops |
+| Vendor incidents (SOC 2 exceptions, breach) | Continuous | 0 | CISO |
+| Guardrail / data-leak events | Real-time | 0 | CISO |
 
-Escalation: any KPI breach for 2 consecutive periods → re-open risk assessment; ARC notified within 5 working days.
+Reassessment triggers: model retrained, prompt or feature change, vendor changes foundation model, new jurisdiction, incident, regulatory change, or 6 months elapsed (Tier 2 cadence).
+
+Next reassessment date: **25 October 2026** (6 months).
+
+---
+
+End of workbook. Inventory updated; risks added to register (R-0001 through R-0005 for this use case); treatments tracked in T-0001 through T-0006.
