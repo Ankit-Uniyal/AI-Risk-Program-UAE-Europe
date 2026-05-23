@@ -1,8 +1,8 @@
-# 07 — Policy Stack
+# 07 - Policy Stack
 
 The policy stack is the **written set of binding rules** that translate the Charter into day-to-day behaviour. Approve each policy at the appropriate authority level and publish on the enterprise policy portal.
 
-## Layer 1 — Apex policy
+## Layer 1 - Apex policy
 
 ### 1. AI Policy (enterprise)
 - Statement of principles (lawful, ethical, robust).
@@ -12,7 +12,7 @@ The policy stack is the **written set of binding rules** that translate the Char
 - Reference to all lower-layer policies and standards.
 - Owner: CAIO / CRO. Approver: Board.
 
-## Layer 2 — Functional policies
+## Layer 2 - Functional policies
 
 ### 2. Acceptable Use of AI (employee-facing)
 - Approved enterprise tools (e.g., enterprise GenAI workspace).
@@ -78,7 +78,7 @@ The policy stack is the **written set of binding rules** that translate the Char
 - Override and appeal rights.
 - Owner: Head of AI Risk + BU heads.
 
-## Layer 3 — Standards and procedures
+## Layer 3 - Standards and procedures
 - AI System Inventory Standard.
 - AI Impact Assessment Procedure.
 - Model Validation Standard.
