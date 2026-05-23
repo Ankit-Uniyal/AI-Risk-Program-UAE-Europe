@@ -1,4 +1,4 @@
-# 02 — Governance and RACI
+# 02 - Governance and RACI
 
 ## 1. Governance bodies
 
@@ -7,7 +7,7 @@
 - Receives quarterly AI risk dashboard and material incident reports.
 - Approves exceptions above the High-risk threshold.
 
-### 1.2 AI Risk Committee (ARC) — executive
+### 1.2 AI Risk Committee (ARC) - executive
 - Chair: Chief AI Officer (or CRO + CISO joint chair).
 - Members: CDO, CTO, CIO, CCO, DPO, General Counsel, Head of Internal Audit (observer), Head of Procurement, lead Business Unit risk officers.
 - Meets monthly. Approves risk tier classifications, conformity assessments, and remediation plans.
