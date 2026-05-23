@@ -1,4 +1,4 @@
-# EU AI Act — Clause-by-Clause Control Mapping
+# EU AI Act - Clause-by-Clause Control Mapping
 
 Use this as the working reference when designing controls for an EU-operating AI system. Numbers refer to Regulation (EU) 2024/1689.
 
@@ -29,14 +29,14 @@ Use this as the working reference when designing controls for an EU-operating AI
 | Art. 49 | Registration in the EU database | Providers, public-body deployers | I1 | Database entry ID |
 | Art. 50 | Transparency for certain AI systems | Providers and deployers | E1–E4 | Disclosure UX, watermarking |
 | Art. 51–55 | GPAI obligations and systemic-risk GPAI | GPAI providers | See `gpai-obligations.md` | Model documentation, copyright policy, evaluations |
-| Art. 56 | Codes of practice | GPAI providers | — | Signed code, evidence of adherence |
-| Art. 60 | Sandboxes | Optional | — | Sandbox plan |
+| Art. 56 | Codes of practice | GPAI providers | - | Signed code, evidence of adherence |
+| Art. 60 | Sandboxes | Optional | - | Sandbox plan |
 | Art. 61–62 | Post-market monitoring | High-risk providers | K1–K5 | Monitoring plan and reports |
 | Art. 73 | Serious-incident reporting | Providers and deployers | K3, I6 | Notification records |
-| Art. 99–101 | Penalties | All | — | (Risk-acceptance memos) |
+| Art. 99–101 | Penalties | All | - | (Risk-acceptance memos) |
 
 ## Working tips
 - Mirror the **Annex IV** outline directly in the technical-documentation template; this avoids re-work later.
 - Build the **post-market monitoring plan** at design time, not after go-live.
 - For systems that are **also DORA-regulated**, register and document once and produce both views from a single source of truth.
-- For systems also covered by **MDR**, sequence the Notified Body engagement carefully — most MDR Notified Bodies are still building AI-Act competence.
+- For systems also covered by **MDR**, sequence the Notified Body engagement carefully - most MDR Notified Bodies are still building AI-Act competence.
