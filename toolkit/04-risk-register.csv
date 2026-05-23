@@ -1,0 +1,5 @@
+Risk_ID,AI_ID,Risk_Description,Risk_Category,Inherent_Score,Controls_Summary,Residual_Score,Risk_Owner,Treatment_Plan_IDs,Status,Date_Identified,Last_Review,Next_Review,Notes
+R-0001,AI-2026-0001,Disparate impact on female applicants in CV screening model,Bias,4,Bias testing quarterly + fairness-aware retraining + monthly monitoring,2,Head of HR,T-0001;T-0002,Open,2026-03-01,2026-05-01,2026-08-01,Pilot showed 8% gap; mitigations in progress
+R-0002,AI-2026-0001,Vendor may use customer data to retrain its base model,Vendor,4,Contract clause restricts retraining + audit right exercised annually,2,Procurement,T-0003,Open,2026-03-01,2026-05-01,2026-08-01,Vendor confirmed opt-out in writing 2026-04-10
+R-0003,AI-2026-0002,Customer chatbot hallucinates product details,Robustness,4,RAG grounding to product catalogue + output filter + weekly evaluation,3,Head of CX,T-0004;T-0005,Open,2026-01-10,2026-04-10,2026-07-10,One incident in Q1; mitigations in production
+,,,,,,,,,,,,,
