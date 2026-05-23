@@ -1,4 +1,4 @@
-# AI Risk Program — UAE & Europe
+# AI Risk Program - UAE & Europe
 
 A practical, ready-to-use toolkit for designing and running an AI Risk Management program end-to-end. Industry-neutral. Two regional lenses: **UAE** and **Europe**. Built so a CISO, CRO, Chief AI Officer, DPO, Internal Audit lead, or risk analyst can pick it up and **actually run an assessment today**.
 
@@ -10,17 +10,17 @@ A practical, ready-to-use toolkit for designing and running an AI Risk Managemen
 
 ## ⚡ Start here (5 minutes)
 
-If you only read three things, read these — in this order:
+If you only read three things, read these - in this order:
 
-1. **[START-HERE/quick-start.md](START-HERE/quick-start.md)** — what this repo is, who it is for, and the 8-step process in one page.
-2. **[START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md](START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md)** — the step-by-step playbook you follow for every new AI use case.
-3. **[WORKED-EXAMPLE/](WORKED-EXAMPLE/)** — a fully filled-in assessment for a fictional CV-Screening AI so you can see exactly what "done" looks like before you do your own.
+1. **[START-HERE/quick-start.md](START-HERE/quick-start.md)** - what this repo is, who it is for, and the 8-step process in one page.
+2. **[START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md](START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md)** - the step-by-step playbook you follow for every new AI use case.
+3. **[WORKED-EXAMPLE/](WORKED-EXAMPLE/)** - a fully filled-in assessment for a fictional CV-Screening AI so you can see exactly what "done" looks like before you do your own.
 
 ---
 
 ## 🧰 The toolkit (the files you actually fill in)
 
-These live in [`toolkit/`](toolkit/) and are deliberately plain — Markdown and CSV — so they open in Excel, Google Sheets, Notion, Jira, or anywhere you already work.
+These live in [`toolkit/`](toolkit/) and are deliberately plain - Markdown and CSV - so they open in Excel, Google Sheets, Notion, Jira, or anywhere you already work.
 
 | # | File | What it is | When you use it |
 |---|---|---|---|
@@ -40,14 +40,14 @@ A complete worked example of files 01–06 plus an incident log is in [`WORKED-E
 
 The toolkit operationalises this loop. The full version (with who does what, when, evidence to keep) is in [START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md](START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md).
 
-1. **Discover** AI in use — inventory
-2. **Intake** — business owner answers 9 sections
-3. **Classify** — Tier 1 Prohibited / 2 High / 3 Limited / 4 Minimal
-4. **Score** — 8 risk dimensions (additive, 8–40)
-5. **Treat** — controls + owners + dates
-6. **Approve** — right approver for the tier and residual band
-7. **Monitor** — KPIs + triggers
-8. **Report** — board pack + regulator-ready evidence
+1. **Discover** AI in use - inventory
+2. **Intake** - business owner answers 9 sections
+3. **Classify** - Tier 1 Prohibited / 2 High / 3 Limited / 4 Minimal
+4. **Score** - 8 risk dimensions (additive, 8–40)
+5. **Treat** - controls + owners + dates
+6. **Approve** - right approver for the tier and residual band
+7. **Monitor** - KPIs + triggers
+8. **Report** - board pack + regulator-ready evidence
 
 ---
 
@@ -55,19 +55,19 @@ The toolkit operationalises this loop. The full version (with who does what, whe
 
 The toolkit is region-agnostic. The two sub-projects below give you the regulatory mapping and the deltas you need to drop into the toolkit.
 
-- [`uae/`](uae/) — UAE AI Office Charter, **CBUAE** model-risk and tech-risk expectations, **DOH** Abu Dhabi AI guidance, **DHA**, **DIFC** (incl. Regulation 10), **ADGM**, UAE PDPL, sector-specific notes.
-- [`europe/`](europe/) — EU AI Act (with phased dates), GDPR Art. 22, NIS2, DORA, CRA, Product Liability Directive, sectoral overlays (EBA, EIOPA, EMA).
+- [`uae/`](uae/) - UAE AI Office Charter, **CBUAE** model-risk and tech-risk expectations, **DOH** Abu Dhabi AI guidance, **DHA**, **DIFC** (incl. Regulation 10), **ADGM**, UAE PDPL, sector-specific notes.
+- [`europe/`](europe/) - EU AI Act (with phased dates), GDPR Art. 22, NIS2, DORA, CRA, Product Liability Directive, sectoral overlays (EBA, EIOPA, EMA).
 
 ---
 
 ## 📚 Reference foundation
 
-Background and design rationale — read only if you need it.
+Background and design rationale - read only if you need it.
 
-- [`00-foundation/`](00-foundation/) — governance charter, RACI, three-lines model, risk taxonomy, policies, methodology, controls catalogue, tooling, metrics, training, **ISO/IEC 42001 crosswalk** (`11-iso-42001-crosswalk.md`), **NIST AI RMF crosswalk** (`12-nist-ai-rmf-crosswalk.md`), **internal audit / third-line plan** (`13-internal-audit-plan.md`).
-- [`templates/`](templates/) — additional templates (AIIA, model card, data card, vendor due diligence, incident runbook).
-- [`roadmap/`](roadmap/) — 18-month implementation roadmap.
-- [`evidence/`](evidence/) — placeholder evidence vault with naming convention used by the CSVs.
+- [`00-foundation/`](00-foundation/) - governance charter, RACI, three-lines model, risk taxonomy, policies, methodology, controls catalogue, tooling, metrics, training, **ISO/IEC 42001 crosswalk** (`11-iso-42001-crosswalk.md`), **NIST AI RMF crosswalk** (`12-nist-ai-rmf-crosswalk.md`), **internal audit / third-line plan** (`13-internal-audit-plan.md`).
+- [`templates/`](templates/) - additional templates (AIIA, model card, data card, vendor due diligence, incident runbook).
+- [`roadmap/`](roadmap/) - 18-month implementation roadmap.
+- [`evidence/`](evidence/) - placeholder evidence vault with naming convention used by the CSVs.
 
 ---
 
@@ -87,7 +87,7 @@ Background and design rationale — read only if you need it.
 
 | Standard / framework | Crosswalk file |
 |---|---|
-| ISO/IEC 42001:2023 — AI Management System | [`00-foundation/11-iso-42001-crosswalk.md`](00-foundation/11-iso-42001-crosswalk.md) |
+| ISO/IEC 42001:2023 - AI Management System | [`00-foundation/11-iso-42001-crosswalk.md`](00-foundation/11-iso-42001-crosswalk.md) |
 | NIST AI RMF 1.0 + Generative AI Profile | [`00-foundation/12-nist-ai-rmf-crosswalk.md`](00-foundation/12-nist-ai-rmf-crosswalk.md) |
 | EU AI Act | [`europe/`](europe/) |
 | UAE Charter / CBUAE / DOH / DIFC | [`uae/`](uae/) |
