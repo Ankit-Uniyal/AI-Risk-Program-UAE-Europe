@@ -1,6 +1,6 @@
-# 11 — ISO/IEC 42001 Crosswalk
+# 11 - ISO/IEC 42001 Crosswalk
 
-This file maps **ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system** clauses to where this program already satisfies them. It is a self-attestation crosswalk, not a certification.
+This file maps **ISO/IEC 42001:2023 - Information technology - Artificial intelligence - Management system** clauses to where this program already satisfies them. It is a self-attestation crosswalk, not a certification.
 
 Use this when (a) building the case for management certification, (b) answering an audit or regulator question on standards alignment, or (c) showing a vendor / customer that the program follows a recognised AIMS standard.
 
@@ -47,7 +47,7 @@ Use this when (a) building the case for management certification, (b) answering 
 
 ---
 
-## Annex A controls (ISO 42001 Annex A — reference controls)
+## Annex A controls (ISO 42001 Annex A - reference controls)
 
 ISO 42001 Annex A lists ~38 controls grouped into AI-policy, internal organisation, resources, impact assessment, lifecycle, data, information for interested parties, AI system use, and third-party relationships. The mapping below shows which file in this repo carries the evidence:
 
