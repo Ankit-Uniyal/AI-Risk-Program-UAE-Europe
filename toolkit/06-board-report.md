@@ -1,4 +1,4 @@
-# 06 — Quarterly AI Risk Board Report
+# 06 - Quarterly AI Risk Board Report
 
 > **How to use:** every quarter, copy this file, rename it `board-report-YYYY-Q.md`, fill in the blanks using your inventory + risk register + treatment plan, and send to the Board Risk Committee.
 
