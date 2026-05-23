@@ -1,4 +1,4 @@
-# 04 — AI System Inventory Template
+# 04 - AI System Inventory Template
 
 The inventory is the single source of truth for every AI system in <ORG>. Without an inventory, no other control is enforceable.
 
@@ -28,7 +28,7 @@ The inventory is the single source of truth for every AI system in <ORG>. Withou
 | AI technique | ML type, model family, foundation model used. | Gradient-boosted trees |
 | Foundation model | Name, version, provider (if used). | GPT-4o via Azure OpenAI |
 | Training data sources | Internal datasets, external feeds, licensed corpora. | CRM, bureau A |
-| Personal data | Yes / No, categories, lawful basis. | Yes — Art 6(1)(b) |
+| Personal data | Yes / No, categories, lawful basis. | Yes - Art 6(1)(b) |
 | Special category data | Yes / No, justification. | No |
 | Deployment environment | On-prem, public cloud region, edge. | Azure UAE North |
 | Vendor | Build vs buy vs hybrid. | Hybrid |
