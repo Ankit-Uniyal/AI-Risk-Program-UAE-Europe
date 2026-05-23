@@ -1,9 +1,9 @@
-# General-Purpose AI (GPAI) — Obligations
+# General-Purpose AI (GPAI) - Obligations
 
 GPAI model obligations under the EU AI Act apply from **2 August 2025**. Two tiers: GPAI models, and GPAI models with **systemic risk**.
 
 ## 1. Who is a GPAI provider?
-A provider that develops a general-purpose AI model and places it on the EU market — directly, via API, via library, embedded in a system, or under another label. Open-source models have specific exemptions but **not** if they pose systemic risk.
+A provider that develops a general-purpose AI model and places it on the EU market - directly, via API, via library, embedded in a system, or under another label. Open-source models have specific exemptions but **not** if they pose systemic risk.
 
 ## 2. Baseline GPAI obligations (Art. 53)
 - Technical documentation of the model (training, evaluation, intended use, integration guidance).
@@ -44,4 +44,4 @@ The General-Purpose AI Code of Practice published by the AI Office provides a pr
 - Exit plan: how would you replace the provider in 90 days?
 
 ## 8. Open-source nuance
-Truly open-weight models with publicly released weights and architecture receive transparency-rule relief — but NOT if they are systemic-risk. If you fine-tune an open model for a High-risk use case, the **system-level High-risk obligations still apply**.
+Truly open-weight models with publicly released weights and architecture receive transparency-rule relief - but NOT if they are systemic-risk. If you fine-tune an open model for a High-risk use case, the **system-level High-risk obligations still apply**.
