@@ -1,12 +1,12 @@
-# 03 — AI Risk Assessment Workbook
+# 03 - AI Risk Assessment Workbook
 
-How to use: copy this file into a new doc, rename it `assessment-<AI-ID>.md`, and fill in every section. Each section is self-scoring — answer the questions, write the score in the box, and add the totals as instructed.
+How to use: copy this file into a new doc, rename it `assessment-<AI-ID>.md`, and fill in every section. Each section is self-scoring - answer the questions, write the score in the box, and add the totals as instructed.
 
 AI-ID: ____________________ System name: ____________________ Assessor: ____________________ Date: ____________________
 
 ---
 
-## SECTION A — Tier Classification
+## SECTION A - Tier Classification
 
 Answer each question Y / N. Stop at the first YES.
 
@@ -48,79 +48,79 @@ Recorded Tier: ____________________
 
 ---
 
-## SECTION B — Inherent Risk Scoring (8 Dimensions, additive 8–40)
+## SECTION B - Inherent Risk Scoring (8 Dimensions, additive 8–40)
 
 For each dimension below, pick the score (1–5) that best matches the situation and write it in the box. At the end, sum all eight scores. The total is the **Inherent Risk Score** on a scale of 8–40.
 
 **B1. Impact on individuals**
-- 1 — No effect on anyone's rights, safety, finances or wellbeing.
-- 2 — Inconvenience only.
-- 3 — Material inconvenience or minor financial impact.
-- 4 — Loss of access to services, financial loss, dignity impact, or affects vulnerable groups.
-- 5 — Safety risk, loss of fundamental rights, or irreversible harm.
+- 1 - No effect on anyone's rights, safety, finances or wellbeing.
+- 2 - Inconvenience only.
+- 3 - Material inconvenience or minor financial impact.
+- 4 - Loss of access to services, financial loss, dignity impact, or affects vulnerable groups.
+- 5 - Safety risk, loss of fundamental rights, or irreversible harm.
 
 Score B1: __
 
 **B2. Privacy and data protection**
-- 1 — No personal data used.
-- 2 — Limited personal data, well-known lawful basis, no sensitive categories.
-- 3 — Significant personal data, clear lawful basis, some monitoring needed.
-- 4 — Special category data (health, biometric, etc.) or children's data; cross-border processing.
-- 5 — Mass personal data with weak lawful basis, or special category at scale.
+- 1 - No personal data used.
+- 2 - Limited personal data, well-known lawful basis, no sensitive categories.
+- 3 - Significant personal data, clear lawful basis, some monitoring needed.
+- 4 - Special category data (health, biometric, etc.) or children's data; cross-border processing.
+- 5 - Mass personal data with weak lawful basis, or special category at scale.
 
 Score B2: __
 
 **B3. Fairness and bias**
-- 1 — No decision affects different groups differently.
-- 2 — Outputs are similar across groups; basic testing done.
-- 3 — Some risk of disparate impact; mitigations in place.
-- 4 — Known risk of disparate impact; mitigations under development.
-- 5 — High risk of disparate impact on protected groups; no mitigation yet.
+- 1 - No decision affects different groups differently.
+- 2 - Outputs are similar across groups; basic testing done.
+- 3 - Some risk of disparate impact; mitigations in place.
+- 4 - Known risk of disparate impact; mitigations under development.
+- 5 - High risk of disparate impact on protected groups; no mitigation yet.
 
 Score B3: __
 
 **B4. Security**
-- 1 — System is closed, no external inputs, well-protected.
-- 2 — Standard enterprise controls in place.
-- 3 — Exposed to user inputs (e.g. LLM prompts) with guardrails.
-- 4 — Exposed to user inputs without robust guardrails; or supply-chain risk.
-- 5 — High-value model with no AI-specific threat mitigation (prompt injection, model theft, poisoning).
+- 1 - System is closed, no external inputs, well-protected.
+- 2 - Standard enterprise controls in place.
+- 3 - Exposed to user inputs (e.g. LLM prompts) with guardrails.
+- 4 - Exposed to user inputs without robust guardrails; or supply-chain risk.
+- 5 - High-value model with no AI-specific threat mitigation (prompt injection, model theft, poisoning).
 
 Score B4: __
 
 **B5. Robustness and accuracy**
-- 1 — Deterministic logic, accuracy not a concern.
-- 2 — Accuracy measured, stable, drift unlikely.
-- 3 — Accuracy measured; drift possible; monitoring planned.
-- 4 — Accuracy varies; drift expected; monitoring not yet in place.
-- 5 — Accuracy unknown or unstable; hallucination risk; no monitoring.
+- 1 - Deterministic logic, accuracy not a concern.
+- 2 - Accuracy measured, stable, drift unlikely.
+- 3 - Accuracy measured; drift possible; monitoring planned.
+- 4 - Accuracy varies; drift expected; monitoring not yet in place.
+- 5 - Accuracy unknown or unstable; hallucination risk; no monitoring.
 
 Score B5: __
 
 **B6. Transparency and explainability**
-- 1 — Outputs are fully explainable to a layperson.
-- 2 — Outputs are explainable to a domain expert.
-- 3 — Outputs explainable with effort; instructions for use published.
-- 4 — Black-box model; explanations only at aggregate level.
-- 5 — No explanation possible; no disclosure to affected persons.
+- 1 - Outputs are fully explainable to a layperson.
+- 2 - Outputs are explainable to a domain expert.
+- 3 - Outputs explainable with effort; instructions for use published.
+- 4 - Black-box model; explanations only at aggregate level.
+- 5 - No explanation possible; no disclosure to affected persons.
 
 Score B6: __
 
 **B7. Human oversight**
-- 1 — Every decision reviewed by a trained human with authority to override.
-- 2 — Sampling-based human review; clear override path.
-- 3 — Human review on exception only; override possible.
-- 4 — Limited human review; override slow or unclear.
-- 5 — Fully automated decisions; no meaningful human review.
+- 1 - Every decision reviewed by a trained human with authority to override.
+- 2 - Sampling-based human review; clear override path.
+- 3 - Human review on exception only; override possible.
+- 4 - Limited human review; override slow or unclear.
+- 5 - Fully automated decisions; no meaningful human review.
 
 Score B7: __
 
 **B8. Vendor and supply chain**
-- 1 — Fully in-house, no third-party AI.
-- 2 — Single trusted vendor with strong contract.
-- 3 — Multiple vendors with standard contracts.
-- 4 — Critical vendor with weak contract terms; concentration risk.
-- 5 — Vendor will train on our data; no model-change notification; no exit plan.
+- 1 - Fully in-house, no third-party AI.
+- 2 - Single trusted vendor with strong contract.
+- 3 - Multiple vendors with standard contracts.
+- 4 - Critical vendor with weak contract terms; concentration risk.
+- 5 - Vendor will train on our data; no model-change notification; no exit plan.
 
 Score B8: __
 
@@ -142,7 +142,7 @@ Note: any single dimension scored 5 automatically escalates the band to at least
 
 ---
 
-## SECTION C — Controls and Treatment
+## SECTION C - Controls and Treatment
 
 For every dimension that scored 3 or higher, pick the recommended controls below and commit to implementing them. Add each control as a row in toolkit/05-treatment-plan.csv.
 
@@ -192,7 +192,7 @@ For every control added: copy a row into toolkit/05-treatment-plan.csv.
 
 ---
 
-## SECTION D — Residual Risk and Approval
+## SECTION D - Residual Risk and Approval
 
 After committing to the controls above, re-score each dimension assuming the controls are in place and working. Sum again for the Residual Risk Score on the same 8–40 scale.
 
@@ -230,7 +230,7 @@ I/we accept the residual risk identified above for the named AI system, subject 
 
 ---
 
-## SECTION E — Monitoring Plan
+## SECTION E - Monitoring Plan
 
 Pick the metrics relevant to this system and the cadence. These are what you watch after go-live.
 
