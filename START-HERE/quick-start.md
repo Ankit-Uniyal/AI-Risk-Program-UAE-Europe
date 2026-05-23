@@ -1,105 +1,103 @@
-# Start Here — 5-Minute Quick Start
+# AI Risk Program - UAE & Europe
 
-You are about to run an **AI risk assessment** on a real or planned AI use case in your organisation. This page tells you exactly what to do, in order, in plain language.
+A practical, ready-to-use toolkit for designing and running an AI Risk Management program end-to-end. Industry-neutral. Two regional lenses: **UAE** and **Europe**. Built so a CISO, CRO, Chief AI Officer, DPO, Internal Audit lead, or risk analyst can pick it up and **actually run an assessment today**.
 
-If you read nothing else, read this page.
-
----
-
-## What this toolkit gives you
-
-Six concrete files you fill in. Together they form a complete end-to-end AI risk assessment.
-
-| # | File | What you do with it |
-|---|---|---|
-| 1 | `toolkit/01-ai-inventory.csv` | List every AI system in your organisation, one row per system. |
-| 2 | `toolkit/02-intake-form.md` | Capture a NEW use case in 15 minutes when someone proposes it. |
-| 3 | `toolkit/03-risk-assessment-workbook.md` | Answer 30 questions; the workbook scores the risk and tells you what tier the system is. |
-| 4 | `toolkit/04-risk-register.csv` | Log every identified risk with owner, score, and treatment plan. |
-| 5 | `toolkit/05-treatment-plan.csv` | Track every control / action you commit to, with due dates and status. |
-| 6 | `toolkit/06-board-report.md` | One-page summary for the Board / ExCo every quarter. |
-
-That is it. Six files. You do not need to read the rest of the repo to get started.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Status](https://img.shields.io/badge/status-portfolio-blue)
+![Scope](https://img.shields.io/badge/scope-UAE%20%2B%20Europe-green)
 
 ---
 
-## The 8-step process
+## ⚡ Start here (5 minutes)
 
-Run these eight steps for every AI use case. They take about **half a day** for a typical use case.
+If you only read three things, read these - in this order:
 
-```
-1. DISCOVER  -> Find AI systems in use or planned   -> fill row in 01-ai-inventory.csv
-2. INTAKE    -> Capture the use case details        -> 02-intake-form.md
-3. CLASSIFY  -> Decide the risk tier (1 to 4)       -> Section A of 03-workbook
-4. SCORE     -> Score risks across 8 dimensions     -> Section B of 03-workbook
-5. TREAT     -> Pick controls that reduce the risk  -> Section C of 03-workbook + 05-treatment-plan.csv
-6. APPROVE   -> Get the right approver to sign-off  -> Section D of 03-workbook
-7. MONITOR   -> Set up ongoing checks               -> Section E of 03-workbook
-8. REPORT    -> Roll up to the Board                -> 06-board-report.md
-```
-
-Each step is also explained in detail in `HOW-TO-RUN-AN-ASSESSMENT.md`.
+1. **[START-HERE/quick-start.md](START-HERE/quick-start.md)** - what this repo is, who it is for, and the 8-step process in one page.
+2. **[START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md](START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md)** - the step-by-step playbook you follow for every new AI use case.
+3. **[WORKED-EXAMPLE/](WORKED-EXAMPLE/)** - a fully filled-in assessment for a fictional CV-Screening AI so you can see exactly what "done" looks like before you do your own.
 
 ---
 
-## See it done first — open the Worked Example
+## 🧰 The toolkit (the files you actually fill in)
 
-Before doing your own assessment, look at the **fully completed example** in `WORKED-EXAMPLE/`. It is a fictional **CV-Screening AI for HR** with every file filled in, every score explained, and the Board report written. Copy the format.
+These live in [`toolkit/`](toolkit/) and are deliberately plain - Markdown and CSV - so they open in Excel, Google Sheets, Notion, Jira, or anywhere you already work.
 
-Files in WORKED-EXAMPLE:
-- `example-01-intake.md` — how the use case was first captured.
-- `example-02-workbook.md` — the completed assessment.
-- `example-03-risk-register-extract.csv` — the risks that made it onto the register.
-- `example-04-treatment-plan-extract.csv` — the controls being implemented.
-- `example-05-board-report.md` — the one-pager that went to the Board.
+| # | File | What it is | When you use it |
+|---|---|---|---|
+| 01 | [`toolkit/01-ai-inventory.csv`](toolkit/01-ai-inventory.csv) | One row per AI use case in the organisation | Always-on; first thing you build |
+| 02 | [`toolkit/02-intake-form.md`](toolkit/02-intake-form.md) | 9 plain-language sections for the business owner | Whenever a new AI use case appears |
+| 03 | [`toolkit/03-risk-assessment-workbook.md`](toolkit/03-risk-assessment-workbook.md) | Tiering + 8-dimension additive scoring (8–40) + treatment + approval + monitoring | For every Tier 1+ use case |
+| 04 | [`toolkit/04-risk-register.csv`](toolkit/04-risk-register.csv) | Every identified risk, its inherent and residual score | Updated continuously |
+| 05 | [`toolkit/05-treatment-plan.csv`](toolkit/05-treatment-plan.csv) | Every control / action with owner, due date, evidence | Updated continuously |
+| 06 | [`toolkit/06-board-report.md`](toolkit/06-board-report.md) | One-page quarterly pack for ARC / Board | Quarterly |
+| 07 | [`toolkit/07-genai-llm-annex.md`](toolkit/07-genai-llm-annex.md) | Extra scoring + controls for LLMs, foundation models, and agentic AI | Whenever the use case is generative or uses tools/agents |
 
----
-
-## Where the big regulatory documents fit in
-
-The folders `00-foundation/`, `europe/` and `uae/` are the **reference library** — read them once to understand WHY the toolkit asks each question. You do not need to read them to USE the toolkit. They explain:
-
-- `00-foundation/` — the underlying program design (governance, taxonomy, controls).
-- `europe/` — EU AI Act mapping (read if you operate in the EU).
-- `uae/` — UAE-specific overlays for CBUAE, DOH, DIFC (read if you operate in the UAE).
-
-Think of it this way:
-
-- **toolkit/** = the tools you USE every day.
-- **WORKED-EXAMPLE/** = the demo of how to use them.
-- **00-foundation/, europe/, uae/** = the textbook behind the tools.
+A complete worked example of files 01–06 plus an incident log is in [`WORKED-EXAMPLE/`](WORKED-EXAMPLE/).
 
 ---
 
-## Your first 60 minutes
+## 🗺️ The 8-step process
 
-1. **Minute 0–10**: Read this page (you are doing it).
-2. **Minute 10–25**: Open `WORKED-EXAMPLE/example-02-workbook.md` and read the completed CV-screening assessment.
-3. **Minute 25–35**: Open `toolkit/01-ai-inventory.csv` and add the FIRST AI system you can think of in your organisation as a single row.
-4. **Minute 35–55**: Take that same system, open `toolkit/03-risk-assessment-workbook.md`, copy it into your own working doc, and answer the 30 questions for that system.
-5. **Minute 55–60**: Look at the auto-generated tier and residual score. Decide who needs to approve.
+The toolkit operationalises this loop. The full version (with who does what, when, evidence to keep) is in [START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md](START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md).
 
-You have just completed your first AI risk assessment.
-
----
-
-## Common questions
-
-**Do I need to be a data scientist to use this?**
-No. The workbook is written for risk, compliance, audit, security, and business roles. If you can fill in a questionnaire and use a heat-map, you can run an assessment.
-
-**What if my org has 50 AI systems and I am one person?**
-Start with the 5 most consequential ones. Add the rest to the inventory but do not try to assess everything at once. Use the tiering in Step 3 to prioritise.
-
-**What if I am in financial services or healthcare or DIFC?**
-Run the standard workbook first, then add the sector-specific questions from the relevant addendum in `uae/` or the EU sector overlays in `europe/`.
-
-**What if I do not know the answer to a question?**
-Mark it Unknown — that is itself a risk and goes on the register. The workbook tells you what to do with Unknowns.
-
-**Do I need to buy any tool?**
-No. The CSV files open in Excel, Google Sheets, or any text editor. The markdown files open in any editor. You can run the entire program for free.
+1. **Discover** AI in use - inventory
+2. **Intake** - business owner answers 9 sections
+3. **Classify** - Tier 1 Prohibited / 2 High / 3 Limited / 4 Minimal
+4. **Score** - 8 risk dimensions (additive, 8–40)
+5. **Treat** - controls + owners + dates
+6. **Approve** - right approver for the tier and residual band
+7. **Monitor** - KPIs + triggers
+8. **Report** - board pack + regulator-ready evidence
 
 ---
 
-## Next: open `HOW-TO-RUN-AN-ASSESSMENT.md` for the step-by-step playbook.
+## 🇦🇪 UAE and 🇪🇺 Europe lenses
+
+The toolkit is region-agnostic. The two sub-projects below give you the regulatory mapping and the deltas you need to drop into the toolkit.
+
+- [`uae/`](uae/) - UAE AI Office Charter, **CBUAE** model-risk and tech-risk expectations, **DOH** Abu Dhabi AI guidance, **DHA**, **DIFC** (incl. Regulation 10), **ADGM**, UAE PDPL, sector-specific notes.
+- [`europe/`](europe/) - EU AI Act (with phased dates), GDPR Art. 22, NIS2, DORA, CRA, Product Liability Directive, sectoral overlays (EBA, EIOPA, EMA).
+
+---
+
+## 📚 Reference foundation
+
+Background and design rationale - read only if you need it.
+
+- [`00-foundation/`](00-foundation/) - governance charter, RACI, three-lines model, risk taxonomy, policies, methodology, controls catalogue, tooling, metrics, training, **ISO/IEC 42001 crosswalk** (`11-iso-42001-crosswalk.md`), **NIST AI RMF crosswalk** (`12-nist-ai-rmf-crosswalk.md`), **internal audit / third-line plan** (`13-internal-audit-plan.md`).
+- [`templates/`](templates/) - additional templates (AIIA, model card, data card, vendor due diligence, incident runbook).
+- [`roadmap/`](roadmap/) - 18-month implementation roadmap.
+- [`evidence/`](evidence/) - placeholder evidence vault with naming convention used by the CSVs.
+
+---
+
+## How to use this repository
+
+**Fork it.** Replace organisation-specific placeholders. Start with your three highest-risk AI use cases. Run them through the 8-step process using the toolkit. Bring the worked example to your first AI Risk Committee so the format is agreed before debate begins.
+
+**Read order for a first-time user:**
+1. `START-HERE/quick-start.md`
+2. `START-HERE/HOW-TO-RUN-AN-ASSESSMENT.md`
+3. `WORKED-EXAMPLE/example-01-intake.md` → `example-02-workbook.md` → `example-05-board-report.md` → `example-06-incident-log.md`
+4. Then open the blank toolkit files in `toolkit/` and start your own.
+
+---
+
+## Standards alignment
+
+| Standard / framework | Crosswalk file |
+|---|---|
+| ISO/IEC 42001:2023 - AI Management System | [`00-foundation/11-iso-42001-crosswalk.md`](00-foundation/11-iso-42001-crosswalk.md) |
+| NIST AI RMF 1.0 + Generative AI Profile | [`00-foundation/12-nist-ai-rmf-crosswalk.md`](00-foundation/12-nist-ai-rmf-crosswalk.md) |
+| EU AI Act | [`europe/`](europe/) |
+| UAE Charter / CBUAE / DOH / DIFC | [`uae/`](uae/) |
+
+---
+
+## Sources (authoritative only)
+
+EU AI Act (eur-lex.europa.eu) · GDPR · NIS2 · DORA · CRA · NIST AI RMF 1.0 + Generative AI Profile · ISO/IEC 42001 · ISO/IEC 23894 · UAE AI Office Charter · **CBUAE** (model risk + tech & cyber risk) · **DOH** Abu Dhabi · **DHA** · **DIFC** Data Protection Law + Regulation 10 · **ADGM** · UAE PDPL.
+
+---
+
+License: [MIT](LICENSE). Use freely, attribution appreciated.
