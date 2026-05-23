@@ -1,0 +1,7 @@
+Treatment_ID,Risk_ID,AI_ID,Control_Description,Control_Type,Owner,Due_Date,Status,Evidence_Link,Date_Completed,Notes
+T-0001,R-0001,AI-2026-0001,Implement quarterly bias / fairness tests using Fairlearn,Detective,Data Science Lead,2026-06-30,In progress,/evidence/bias-tests/AI-0001/,,Pilot results due 2026-06-15
+T-0002,R-0001,AI-2026-0001,Add fairness-aware retraining trigger when subgroup AUC gap > 5%,Preventive,ML Engineering Lead,2026-07-31,Open,,,
+T-0003,R-0002,AI-2026-0001,Renegotiate vendor contract to add no-train-on-customer-data clause,Preventive,Procurement,2026-05-15,Completed,/contracts/vendorco-2026-amendment.pdf,2026-04-10,Confirmed by counsel
+T-0004,R-0003,AI-2026-0002,Ground chatbot responses on product catalogue via RAG,Preventive,CX Engineering,2026-03-01,Completed,/architecture/chatbot-rag-v2,2026-02-25,
+T-0005,R-0003,AI-2026-0002,Weekly hallucination evaluation against 200 gold-standard Q&A,Detective,QA Lead,2026-04-01,Completed,/evals/chatbot-weekly/,2026-03-28,Threshold set at 95% pass rate
+,,,,,,,,,,
