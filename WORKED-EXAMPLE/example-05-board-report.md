@@ -1,4 +1,4 @@
-# Worked Example 05 — Board Report (Q2 2026)
+# Worked Example 05 - Board Report (Q2 2026)
 
 Filled-in copy of `toolkit/06-board-report.md` showing how the CV-Screening AI (AI-2026-0001) and Customer Service Chatbot (AI-2026-0002) appear in quarterly reporting. Tier labels and scoring method match the toolkit (Tier 1 Prohibited / Tier 2 High-risk / Tier 3 Limited / Tier 4 Minimal; inherent/residual scored 8–40 additive).
 
@@ -18,7 +18,7 @@ We have 14 AI systems in the inventory; 1 is Tier 2 High-risk (CV-Screening AI),
 |---|---|---|---|
 | Total AI systems in inventory | 14 | 9 | ▲ +5 |
 | New AI systems this quarter | 5 | 2 | ▲ |
-| Retired AI systems this quarter | 0 | 1 | — |
+| Retired AI systems this quarter | 0 | 1 | - |
 | Tier 1 Prohibited (should always be 0) | 0 | 0 | flat |
 | Tier 2 High-risk | 1 | 0 | ▲ +1 |
 | Tier 3 Limited | 5 | 3 | ▲ +2 |
@@ -42,8 +42,8 @@ We have 14 AI systems in the inventory; 1 is Tier 2 High-risk (CV-Screening AI),
 
 | # | AI system | Risk | Residual | Owner | Treatment status |
 |---|---|---|---|---|---|
-| 1 | CV-Screening AI | Lack of candidate transparency (R-0003) | 6 | DPO | In progress — go-live conditional |
-| 2 | CV-Screening AI | Disparate impact on female applicants (R-0001) | 8 | Head of HR | In progress — bias test scheduled 15 Jul |
+| 1 | CV-Screening AI | Lack of candidate transparency (R-0003) | 6 | DPO | In progress - go-live conditional |
+| 2 | CV-Screening AI | Disparate impact on female applicants (R-0001) | 8 | Head of HR | In progress - bias test scheduled 15 Jul |
 | 3 | Customer Service Chatbot | Hallucinated product details (R-0006) | 6 | Head of CX | Mitigations in production; weekly evals running |
 | 4 | CV-Screening AI | Vendor concentration / training-on-customer-data (R-0002) | 6 | Procurement | Addendum signature expected 30 Jun |
 | 5 | CV-Screening AI | Low recruiter override rate (R-0005) | 6 | HR Ops Manager | Training scheduled Aug; KPI dashboard build started |
@@ -58,7 +58,7 @@ We have 14 AI systems in the inventory; 1 is Tier 2 High-risk (CV-Screening AI),
 | % High-risk with current AIIA | 100% | 100% | 🟢 | CV-Screening AI assessed 18 Apr 2026 |
 | % vendors with current AI due-diligence | 95% | 92% | 🟡 | Two minor SaaS vendors with embedded AI features overdue; closure planned Q3 |
 | Open material findings (Internal Audit) | 0 | 0 | 🟢 | First thematic audit scheduled Q4 2026 |
-| Material AI incidents | 0 | 0 | 🟢 | One minor chatbot incident in Q1 — closed |
+| Material AI incidents | 0 | 0 | 🟢 | One minor chatbot incident in Q1 - closed |
 | Staff trained in AI literacy | 95% | 84% | 🟡 | AAUP v1.2 training rolled out; completion tracking on |
 | % LLM endpoints behind guardrails | 100% | 100% | 🟢 | All four production LLM endpoints fronted by gateway |
 
@@ -68,7 +68,7 @@ We have 14 AI systems in the inventory; 1 is Tier 2 High-risk (CV-Screening AI),
 
 | Date | System | Severity | Summary | Root cause | Status |
 |---|---|---|---|---|---|
-| — | — | — | No material incidents this quarter | — | — |
+| - | - | - | No material incidents this quarter | - | - |
 
 ---
 
