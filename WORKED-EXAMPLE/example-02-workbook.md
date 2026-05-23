@@ -1,4 +1,4 @@
-# Worked Example 02 — Risk Assessment Workbook (CV-Screening AI)
+# Worked Example 02 - Risk Assessment Workbook (CV-Screening AI)
 
 Filled-in copy of `toolkit/03-risk-assessment-workbook.md` for AI-2026-0001 (CV-Screening AI). Sections, tier labels, and scoring method mirror the toolkit exactly (Tier 1 Prohibited / Tier 2 High-risk / Tier 3 Limited / Tier 4 Minimal; inherent score = sum of 8 dimensions, 8–40 scale).
 
@@ -8,11 +8,11 @@ Workshop participants: Head of HR, HR Operations Manager, DPO, IT Security Lead,
 
 ---
 
-## SECTION A — Tier Classification
+## SECTION A - Tier Classification
 
-**A1. PROHIBITED list** — all N. No subliminal manipulation, no social scoring, no biometric ID, no emotion recognition in workplace (the system does not infer emotion; it scores fit-to-JD).
+**A1. PROHIBITED list** - all N. No subliminal manipulation, no social scoring, no biometric ID, no emotion recognition in workplace (the system does not infer emotion; it scores fit-to-JD).
 
-**A2. HIGH-RISK list** — **Y** on "Employment, worker management, access to self-employment (CV screening, performance, firing)". EU AI Act Annex III §4 applies.
+**A2. HIGH-RISK list** - **Y** on "Employment, worker management, access to self-employment (CV screening, performance, firing)". EU AI Act Annex III §4 applies.
 
 → **Tier 2 High-risk**. Continue with full assessment.
 
@@ -20,7 +20,7 @@ Recorded Tier: **Tier 2 High-risk**.
 
 ---
 
-## SECTION B — Inherent Risk Scoring (8 Dimensions, additive 8–40)
+## SECTION B - Inherent Risk Scoring (8 Dimensions, additive 8–40)
 
 | Dim | Score | Rationale |
 |---|---|---|
@@ -35,16 +35,16 @@ Recorded Tier: **Tier 2 High-risk**.
 
 **Inherent Risk Score = 4 + 3 + 4 + 3 + 3 + 4 + 2 + 3 = 26 / 40 → Medium**
 
-Note: two dimensions at 4 (B1, B3, B6) and no single dimension at 5 — band stays Medium per the workbook, but proximity to the High band (27–32) is noted for ARC.
+Note: two dimensions at 4 (B1, B3, B6) and no single dimension at 5 - band stays Medium per the workbook, but proximity to the High band (27–32) is noted for ARC.
 
 ---
 
-## SECTION C — Controls and Treatment
+## SECTION C - Controls and Treatment
 
 | Dim ≥ 3 | Control(s) chosen | Owner | Due |
 |---|---|---|---|
 | B1 Impact | (a) Candidate appeal route (human-only review on request); (b) Recruiter UI shows top-5 features per score; (c) Limited decision autonomy in pilot (shortlist only, no auto-reject) | HR + Product | 15 Aug 2026 |
-| B2 Privacy | (a) DPIA signed by DPO; (b) Candidate privacy notice updated to disclose AI scoring; (c) UAE PDPL cross-border transfer assessment; (d) Data minimisation — strip free-text health/family fields before scoring | DPO | 30 Jun 2026 |
+| B2 Privacy | (a) DPIA signed by DPO; (b) Candidate privacy notice updated to disclose AI scoring; (c) UAE PDPL cross-border transfer assessment; (d) Data minimisation - strip free-text health/family fields before scoring | DPO | 30 Jun 2026 |
 | B3 Bias | (a) Pre-deployment disparate-impact test (4/5ths rule) across gender, nationality, age; (b) Exclude photo + DOB from features; (c) Quarterly bias re-test; (d) Fairness-aware retraining trigger when subgroup AUC gap >5% | HR Ops + AI Risk | 15 Jul 2026 |
 | B4 Security | (a) Updated pen test (<6 months); (b) Customer-managed KMS keys; (c) Vendor added to continuous monitoring; (d) AI events to SIEM | CISO | 30 Jun 2026 |
 | B5 Robustness | (a) Champion-challenger test on 2,000 of our historical CVs; (b) Accept only if AUC ≥ 0.78 on our data; (c) Monthly drift monitor | Data Science | 31 Jul 2026 |
@@ -55,7 +55,7 @@ All eight rows added to `toolkit/05-treatment-plan.csv` (see WORKED-EXAMPLE/exam
 
 ---
 
-## SECTION D — Residual Risk and Approval
+## SECTION D - Residual Risk and Approval
 
 | Dimension | Inherent (1–5) | Controls strength | Residual (1–5) |
 |---|---|---|---|
@@ -79,13 +79,13 @@ Required: AI Risk Committee (Tier 2 High-risk; residual Low-Medium still require
 | Chair, AI Risk Committee | Chair | Approve with conditions | 25 Apr 2026 | All Section C controls complete before go-live. Bias re-test result tabled at ARC before launch. |
 | DPO | Privacy | Approve | 25 Apr 2026 | DPIA signed; candidate notice live before go-live. |
 | CISO | Security | Approve | 25 Apr 2026 | KMS keys + fresh pen test before go-live. |
-| Head of HR | Business owner | Accept residual risk | 25 Apr 2026 | — |
+| Head of HR | Business owner | Accept residual risk | 25 Apr 2026 | - |
 
 Go-live conditional on all controls verified.
 
 ---
 
-## SECTION E — Monitoring Plan
+## SECTION E - Monitoring Plan
 
 | Metric | Cadence | Threshold | Owner |
 |---|---|---|---|
