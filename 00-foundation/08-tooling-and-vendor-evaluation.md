@@ -1,4 +1,4 @@
-# 08 — Tooling and Vendor Evaluation
+# 08 - Tooling and Vendor Evaluation
 
 This guide selects tooling for **four control planes**: governance / inventory, model risk, AI security, and observability. It is technology-neutral; replace examples with your shortlist.
 
@@ -21,14 +21,14 @@ This guide selects tooling for **four control planes**: governance / inventory, 
 ## 2. Evaluation framework
 
 Score each candidate on:
-1. **Regulatory fit** — explicit support for EU AI Act, GDPR, ISO/IEC 42001 evidence; UAE data residency.
-2. **Coverage** — across lifecycle, model types, and modalities (incl. GenAI).
-3. **Integration** — fit with current MLOps, IAM, SIEM, GRC.
-4. **Data residency and sovereignty** — UAE North / Frankfurt / Dublin options; on-prem availability.
-5. **Security posture** — SOC 2 Type II, ISO 27001, customer data isolation, BYOK.
-6. **Total cost of ownership** — licence, implementation, BAU effort.
-7. **Vendor viability** — funding, customer base, roadmap, exit risk.
-8. **Time-to-value** — pilot in 30/60/90 days.
+1. **Regulatory fit** - explicit support for EU AI Act, GDPR, ISO/IEC 42001 evidence; UAE data residency.
+2. **Coverage** - across lifecycle, model types, and modalities (incl. GenAI).
+3. **Integration** - fit with current MLOps, IAM, SIEM, GRC.
+4. **Data residency and sovereignty** - UAE North / Frankfurt / Dublin options; on-prem availability.
+5. **Security posture** - SOC 2 Type II, ISO 27001, customer data isolation, BYOK.
+6. **Total cost of ownership** - licence, implementation, BAU effort.
+7. **Vendor viability** - funding, customer base, roadmap, exit risk.
+8. **Time-to-value** - pilot in 30/60/90 days.
 
 ## 3. RFP must-asks
 - Where is data processed and stored? Data-residency options for EU and UAE?
@@ -58,8 +58,8 @@ Score each candidate on:
 ```
 
 ## 5. Buy / build / partner heuristic
-- **Buy**: governance plane, guardrails, observability — fast-moving, vendor specialisation high.
-- **Build**: thin orchestration, business glue, prompts, evaluations — competitive advantage.
+- **Buy**: governance plane, guardrails, observability - fast-moving, vendor specialisation high.
+- **Build**: thin orchestration, business glue, prompts, evaluations - competitive advantage.
 - **Partner**: red-team services, ISO/IEC 42001 audit, legal review.
 
 ## 6. Open-source baseline (zero-budget start)
