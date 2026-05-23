@@ -1,7 +1,7 @@
-# 09 — Metrics, KRIs and Board Reporting
+# 09 - Metrics, KRIs and Board Reporting
 
 ## 1. Principles
-- Few, decision-useful metrics — not vanity counts.
+- Few, decision-useful metrics - not vanity counts.
 - Mix of leading indicators (KRIs) and lagging indicators (incidents, audit findings).
 - Tier-weighted: High-risk systems contribute more to the headline view.
 - Trended over time, with appetite thresholds and breach actions.
@@ -47,7 +47,7 @@
 - Customer complaints attributable to AI.
 - Adverse media events.
 - Regulatory fines and enforcement actions.
-- Value realised (revenue, cost saved, hours returned) — to balance risk story with business outcome.
+- Value realised (revenue, cost saved, hours returned) - to balance risk story with business outcome.
 
 ## 4. Heat-map structure
 2D heat-map: inherent risk (rows) × residual risk (columns), bubble size = number of systems, colour = highest tier. Drill-down to system list per cell.
