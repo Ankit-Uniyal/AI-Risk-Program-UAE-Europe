@@ -1,4 +1,4 @@
-# 03 — AI Risk Taxonomy
+# 03 - AI Risk Taxonomy
 
 A comprehensive, industry-neutral taxonomy of AI risks. Each category lists representative scenarios and an indicative risk owner.
 
