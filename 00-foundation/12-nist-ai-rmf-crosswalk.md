@@ -1,4 +1,4 @@
-# 12 — NIST AI RMF 1.0 Crosswalk (incl. Generative AI Profile)
+# 12 - NIST AI RMF 1.0 Crosswalk (incl. Generative AI Profile)
 
 This file maps **NIST AI Risk Management Framework 1.0 (Jan 2023)** plus the **NIST Generative AI Profile (Jul 2024)** to where this program already satisfies them. NIST AI RMF is voluntary; this crosswalk demonstrates methodological alignment for audit, regulator, customer, or partner conversations.
 
@@ -6,7 +6,7 @@ NIST AI RMF organises actions into four functions: **GOVERN, MAP, MEASURE, MANAG
 
 ---
 
-## GOVERN — cultivate a culture of risk management
+## GOVERN - cultivate a culture of risk management
 
 | NIST sub-category | Topic | Where in this repo |
 |---|---|---|
@@ -28,7 +28,7 @@ NIST AI RMF organises actions into four functions: **GOVERN, MAP, MEASURE, MANAG
 
 ---
 
-## MAP — context recognised and risks identified
+## MAP - context recognised and risks identified
 
 | NIST sub-category | Topic | Where in this repo |
 |---|---|---|
@@ -48,7 +48,7 @@ NIST AI RMF organises actions into four functions: **GOVERN, MAP, MEASURE, MANAG
 
 ---
 
-## MEASURE — risks analysed, assessed, tracked
+## MEASURE - risks analysed, assessed, tracked
 
 | NIST sub-category | Topic | Where in this repo |
 |---|---|---|
@@ -68,7 +68,7 @@ NIST AI RMF organises actions into four functions: **GOVERN, MAP, MEASURE, MANAG
 
 ---
 
-## MANAGE — risks prioritised and acted upon
+## MANAGE - risks prioritised and acted upon
 
 | NIST sub-category | Topic | Where in this repo |
 |---|---|---|
@@ -85,7 +85,7 @@ NIST AI RMF organises actions into four functions: **GOVERN, MAP, MEASURE, MANAG
 
 ---
 
-## NIST Generative AI Profile (July 2024) — 12 risk categories
+## NIST Generative AI Profile (July 2024) - 12 risk categories
 
 | Risk category | Where addressed |
 |---|---|
