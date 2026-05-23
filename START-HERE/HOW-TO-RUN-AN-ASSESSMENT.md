@@ -1,4 +1,4 @@
-# How to Run an AI Risk Assessment — Step by Step
+# How to Run an AI Risk Assessment - Step by Step
 
 This is the **playbook**. Follow these 8 steps for any AI use case and you have done an end-to-end risk assessment.
 
@@ -6,7 +6,7 @@ Time required: about **4 hours** of focused work for a typical use case, spread 
 
 ---
 
-## STEP 1 — DISCOVER (find the AI)
+## STEP 1 - DISCOVER (find the AI)
 
 **Goal:** know which AI systems exist or are being planned.
 
@@ -21,7 +21,7 @@ Time required: about **4 hours** of focused work for a typical use case, spread 
 
 ---
 
-## STEP 2 — INTAKE (capture the use case)
+## STEP 2 - INTAKE (capture the use case)
 
 **Goal:** for a NEW use case, get the basic facts in 15 minutes.
 
@@ -35,7 +35,7 @@ Time required: about **4 hours** of focused work for a typical use case, spread 
 
 ---
 
-## STEP 3 — CLASSIFY (assign a risk tier)
+## STEP 3 - CLASSIFY (assign a risk tier)
 
 **Goal:** decide if the system is Tier 1 (Prohibited), Tier 2 (High-risk), Tier 3 (Limited), or Tier 4 (Minimal).
 
@@ -54,7 +54,7 @@ Time required: about **4 hours** of focused work for a typical use case, spread 
 
 ---
 
-## STEP 4 — SCORE (assess inherent risk)
+## STEP 4 - SCORE (assess inherent risk)
 
 **Goal:** score the system across 8 risk dimensions.
 
@@ -67,7 +67,7 @@ Time required: about **4 hours** of focused work for a typical use case, spread 
 
 ---
 
-## STEP 5 — TREAT (choose controls)
+## STEP 5 - TREAT (choose controls)
 
 **Goal:** lower the risk by adding controls.
 
@@ -82,7 +82,7 @@ Time required: about **4 hours** of focused work for a typical use case, spread 
 
 ---
 
-## STEP 6 — APPROVE (get sign-off)
+## STEP 6 - APPROVE (get sign-off)
 
 **Goal:** the right authority accepts the residual risk.
 
@@ -101,7 +101,7 @@ Time required: about **4 hours** of focused work for a typical use case, spread 
 
 ---
 
-## STEP 7 — MONITOR (set up ongoing checks)
+## STEP 7 - MONITOR (set up ongoing checks)
 
 **Goal:** know if the risk profile changes after go-live.
 
@@ -116,7 +116,7 @@ Time required: about **4 hours** of focused work for a typical use case, spread 
 
 ---
 
-## STEP 8 — REPORT (roll up to Board)
+## STEP 8 - REPORT (roll up to Board)
 
 **Goal:** every quarter, give the Board a one-page view of all AI risk.
 
