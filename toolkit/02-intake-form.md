@@ -1,4 +1,4 @@
-# 02 — AI Intake Form
+# 02 - AI Intake Form
 
 > **How to use:** copy this file into a new doc, rename it `intake-<AI-ID>.md`, fill in the blanks, and bring it to the AI Risk Working Group for triage. Aim to complete in **15 minutes** by interviewing the proposer.
 
@@ -23,7 +23,7 @@
 9. Who uses the AI? (internal staff / customers / public) ____________________
 10. Who is affected by the AI's decisions? ____________________
 11. Approximate number of people affected per month: ____________________
-12. Are any vulnerable groups affected? (children, elderly, patients, jobseekers, persons with disabilities) Y / N — describe: ____________________
+12. Are any vulnerable groups affected? (children, elderly, patients, jobseekers, persons with disabilities) Y / N - describe: ____________________
 
 ## D. Decision impact
 13. What kind of decision does the AI inform? (recommend / decide / act autonomously): ____________________
@@ -54,7 +54,7 @@
 - [ ] The vendor will train its models on our data
 - [ ] We do not yet know all the answers above (mark Unknown and continue)
 
-If ANY of the first three are ticked, this is likely **Tier 1 Prohibited** or **Tier 2 High-risk** — fast-track to full assessment.
+If ANY of the first three are ticked, this is likely **Tier 1 Prohibited** or **Tier 2 High-risk** - fast-track to full assessment.
 
 ## I. Timeline
 26. Target pilot date: ____________________
@@ -66,8 +66,8 @@ If ANY of the first three are ticked, this is likely **Tier 1 Prohibited** or **
 ## ARWG decision (filled in by the Working Group)
 
 - [ ] **Accept** for full assessment. Assigned analyst: __________ Target completion: __________
-- [ ] **Need more info** — questions to answer: __________
-- [ ] **Reject** — reason: __________
+- [ ] **Need more info** - questions to answer: __________
+- [ ] **Reject** - reason: __________
 
 Provisional tier: Tier 1 / Tier 2 / Tier 3 / Tier 4
 Triage signature: __________ Date: __________
